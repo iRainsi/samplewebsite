@@ -1,0 +1,511 @@
+body {
+  background-color: #002244;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
+header {
+  background-color: #002244;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  max-height: 50px;
+}
+
+.contact-btn {
+  background-color: rgb(209, 57, 84);
+  color: #fff;
+  border: solid rgb(209, 57, 84);
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  transition: .5s;
+}
+
+.contact-btn:hover {
+  background-color: transparent;
+  border: solid rgb(209, 57, 84);
+}
+
+.first {
+  padding: 20px;
+  height: 300px;
+  position: relative;
+}
+
+.first p {
+  padding-right: 30%;
+  font-size: 65px;
+  max-width: 70%;
+  color: white;
+  font-weight: bold;
+}
+
+#webdev {
+  display: inline-block;
+  white-space: nowrap;
+  color: rgb(57, 209, 184);
+}
+
+.first img {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  max-width: 30%;
+  z-index: -1;
+  border-radius: 20%;
+}
+
+.quote {
+  margin-top: 10px;
+  background-color: rgb(209, 57, 84);
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  border: solid rgb(209, 57, 84);
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.quote:hover {
+  background-color: transparent;
+}
+
+section {
+  padding: 20px;
+  margin-top: 20px;
+  clear: both;
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+video {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(24, 33, 49);
+  height: 150px;
+  overflow: hidden;
+}
+
+.logos-container img {
+  max-height: 80%;
+  margin-left: 40px;
+}
+
+.firstsection {
+  padding: 20px;
+  height: auto;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.firstsection.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 2s;
+}
+
+.expertise {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  border-bottom: 2px solid white;
+  margin-bottom: 30px;
+}
+
+.expertise span {
+  color: rgb(57, 209, 184);
+}
+
+.firstsection .gridexpert {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.expertcontent {
+  height: 350px;
+  width: 330px;
+  border: none;
+  padding: 20px;
+  margin-bottom: 10%;
+  border-radius: 30px;
+  background-color: #335577;
+  transition: border-radius 1s;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ulo {
+  font-size: 30px;
+  color: white;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  border-bottom: solid 2px;
+}
+
+.expertcontent img {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  height: 200px;
+  position: relative;
+  border-radius: 30px;
+  transition: 1s;
+}
+
+.laman {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.expertcontent:hover,
+.expertcontent img:hover {
+  border-bottom-left-radius: 120px;
+}
+
+.secondsection {
+  background-color: #001a34;
+}
+
+.secondsection p {
+  max-width: 65%;
+  font-size: 45px;
+  font-weight: bold;
+  color: whitesmoke;
+  position: relative;
+  left: 100px;
+}
+
+.secondsection span {
+  color: rgb(57, 209, 184);
+}
+
+.secondsection button {
+  margin-top: 20px;
+  position: relative;
+  left: 100px;
+  padding: 10px 15px 10px 15px;
+  background-color: crimson;
+  border: solid crimson;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+  transition: .5s;
+}
+
+.secondsection button:hover {
+  background-color: transparent;
+}
+
+.thirdsection {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.thirdsection .process {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.thirdsection span {
+  color: rgb(57, 209, 184);
+}
+
+.thirdsection .steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.steps .ngato {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(57, 209, 184);
+}
+
+.steps .baba {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+.steps div img {
+  margin-top: 30%;
+  vertical-align: middle;
+}
+
+.fourthsection {
+  background-color: rgb(0, 26, 52);
+  padding: 20px 80px 20px 80px;
+}
+
+.fourthsection p {
+  margin-top: 30px;
+  font-size: 45px;
+  font-weight: bold;
+  color: whitesmoke;
+  width: 800px;
+  margin-bottom: 30px;
+}
+
+.fourthsection span {
+  color: rgb(57, 209, 184);
+}
+
+.stunning {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.stunning-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.stunning-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.stunning-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(57, 209, 184, 0.5);
+  transition: opacity 0.3s;
+}
+
+.stunning-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay img {
+  align-self: center;
+  padding-top: 10%;
+  padding-left: 10%;
+  position: absolute;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.fifthsection {
+  color: whitesmoke;
+}
+
+.panggrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.look {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.look p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.look span {
+  color: rgb(57, 209, 184);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stats p {
+  display: grid;
+  place-items: center;
+  width: 200px;
+  max-width: 200px;
+  border: none;
+  height: 200px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgb(61, 223, 197);
+  font-weight: bold;
+}
+
+.stats span {
+  font-size: 50px;
+  display: flex;
+  align-items: end;
+}
+
+.sixthsection {
+  background-color: #001a34;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.we {
+  border-bottom: solid 1px;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  color: whitesmoke;
+  margin-bottom: 40px;
+}
+
+.googlereview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.google {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.made-it-happen {
+  width: 100px;
+}
+
+.review {
+  width: auto;
+  height: 150px;
+  background-color: rgb(24, 33, 49);
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.message {
+  font-weight: 300;
+  margin-top: 10px;
+  color: white;
+}
+
+.commentor {
+  margin-top: 50px;
+  color: white;
+}
+
+.seventhsection {
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: rgb(209, 57, 84);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.convo {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+}
+
+.convo span {
+  color: black;
+}
+
+.contact {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1.5px solid #ccc;
+  background-color: transparent;
+  color: white;
+}
+
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  width: 150px;
+  grid-column: span 1;
+  padding: 10px;
+  border: solid white;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.contact button:hover {
+  background-color: transparent;
+}
+
+.anything {
+  align-self: flex-start;
+}
+
+.logos-container img {
+  max-height: 80%;
+  margin-left: 40px;
+  opacity: 0;
+}
+
+.logos-container img.visible {
+  animation: pop-out 1s ease-out both;
+  opacity: 1;
+}
+
+@keyframes pop-out {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
