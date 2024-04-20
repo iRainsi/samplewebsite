@@ -1,29 +1,43 @@
 body {
   background-color: #002244;
+  /* Set the background color to #002244 for the entire page */
   margin: 0;
+  /* Remove default margin */
   padding: 0;
+  /* Remove default padding */
   font-family: Montserrat;
 }
 
 header {
   background-color: #002244;
+  /* Header background color */
   color: #fff;
+  /* Header text color */
   padding: 10px 20px;
+  /* Padding for header content */
   display: flex;
+  /* Use flexbox for layout */
   justify-content: space-between;
+  /* Align items with space between */
 }
 
 header img {
   max-height: 50px;
+  /* Limit the height of the logo */
 }
 
 .contact-btn {
   background-color: rgb(209, 57, 84);
+  /* Button background color */
   color: #fff;
+  /* Button text color */
   border: solid rgb(209, 57, 84);
+  /* Remove button border */
   border-radius: 10px;
   padding: 10px 20px;
+  /* Button padding */
   cursor: pointer;
+  /* Change cursor to pointer on hover */
   font-weight: bold;
   position: absolute;
   right: 20px;
@@ -35,10 +49,13 @@ header img {
   border: solid rgb(209, 57, 84);
 }
 
+/* Adjustments for the first section */
 .first {
   padding: 20px;
+  /* Add padding to the first section */
   height: 300px;
   position: relative;
+  /* Set position to relative to contain absolutely positioned elements */
 }
 
 .first p {
@@ -51,21 +68,30 @@ header img {
 
 #webdev {
   display: inline-block;
+  /* Ensure "WEBSITE DESIGN & DEVELOPMENT" is displayed in one line */
   white-space: nowrap;
+  /* Prevent text from wrapping */
   color: rgb(57, 209, 184);
 }
 
+
 .first img {
   position: absolute;
+  /* Position the image absolutely */
   top: 0;
+  /* Align the image to the top */
   right: 10%;
+  /* Position the image 10% from the right side of the div */
   max-width: 30%;
+  /* Adjust the width of the image */
   z-index: -1;
+  /* Set a lower z-index to position the image behind the paragraph */
   border-radius: 20%;
 }
 
 .quote {
   margin-top: 10px;
+  /* Add margin to separate the button from the paragraph */
   background-color: rgb(209, 57, 84);
   color: whitesmoke;
   font-weight: bold;
@@ -77,65 +103,102 @@ header img {
 
 .quote:hover {
   background-color: transparent;
+
 }
 
+/* Adjustments for other sections */
+/* Adjustments for other sections */
+/* Adjustments for other sections */
 section {
   padding: 20px;
+  /* Padding for sections */
   margin-top: 20px;
+  /* Add margin between sections */
   clear: both;
+  /* Clear floating elements */
   display: block;
 }
+
+
 
 p {
   margin: 0;
+  /* Remove default margin for paragraphs */
 }
 
 video {
+
   width: 90%;
+  /* Set video width to 80% of its container */
   margin: 0 auto;
+  /* Center the video horizontally */
   margin-top: 30px;
   display: block;
+  /* Ensure the video is treated as a block element */
 }
 
 .logos-container {
   display: flex;
+  /* Use flexbox for layout */
   justify-content: center;
+  /* Align items to the end (right side) of the container */
   align-items: center;
+  /* Center items vertically */
   background-color: rgb(24, 33, 49);
+  /* Lighter background color */
   height: 150px;
+  /* Set height */
   overflow: hidden;
+  /* Hide overflow */
 }
 
 .logos-container img {
   max-height: 80%;
+  /* Adjust the height of the images */
   margin-left: 40px;
+  /* Add spacing between images */
 }
 
+/* Adjustments for the first section */
 .firstsection {
   padding: 20px;
+  /* Add padding to the first section */
   height: auto;
   position: relative;
+  /* Set position to relative to contain absolutely positioned elements */
   opacity: 0;
+  /* Initially hide the section */
   transform: translateY(20px);
+  /* Initially move the section down */
   transition: opacity 0.5s ease, transform 0.5s ease;
+  /* Add transition effect */
+
 }
 
+/* Apply fade-in effect when first section comes into view */
 .firstsection.in-view {
   opacity: 1;
   transform: translateY(0);
   transition: 2s;
 }
 
+/* Styling for "OUR EXPERTISE" */
 .expertise {
   font-size: 30px;
+  /* Set font size */
   font-weight: 500;
   color: white;
+  /* Set text color */
   border-bottom: 2px solid white;
+  /* Add line border below the heading */
   margin-bottom: 30px;
 }
 
+/* Styling for "EXPERTISE" */
 .expertise span {
   color: rgb(57, 209, 184);
+  /* Set text color */
+  margin-top: 20px;
 }
 
 .firstsection .gridexpert {
@@ -156,6 +219,7 @@ video {
   grid-template-rows: 1fr 1fr;
 }
 
+
 .ulo {
   font-size: 30px;
   color: white;
@@ -166,12 +230,16 @@ video {
 
 .expertcontent img {
   width: 90%;
+  /* Set the width of the image to 80% of its container */
   margin: 0 auto;
+  /* Center the image horizontally */
   display: block;
+  /* Ensure the image is treated as a block element */
   height: 200px;
   position: relative;
   border-radius: 30px;
   transition: 1s;
+
 }
 
 .laman {
@@ -181,10 +249,11 @@ video {
 
 .expertcontent:hover,
 .expertcontent img:hover {
+
   border-bottom-left-radius: 120px;
 }
 
-.secondsection {
+.secondsection{
   background-color: #001a34;
 }
 
@@ -197,11 +266,11 @@ video {
   left: 100px;
 }
 
-.secondsection span {
+.secondsection span{
   color: rgb(57, 209, 184);
 }
 
-.secondsection button {
+.secondsection button{
   margin-top: 20px;
   position: relative;
   left: 100px;
@@ -214,55 +283,57 @@ video {
   transition: .5s;
 }
 
-.secondsection button:hover {
+.secondsection button:hover{
   background-color: transparent;
 }
 
-.thirdsection {
+.thirdsection{
   padding-left: 80px;
   padding-right: 80px;
 }
 
-.thirdsection .process {
+.thirdsection .process{
   font-size: 40px;
   text-transform: uppercase;
   font-weight: bold;
   color: whitesmoke;
 }
 
-.thirdsection span {
+.thirdsection span{
   color: rgb(57, 209, 184);
 }
 
-.thirdsection .steps {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+.thirdsection .steps{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  
 }
 
-.steps .ngato {
+.steps .ngato{
   text-align: center;
   font-size: 60px;
   color: rgb(57, 209, 184);
 }
 
-.steps .baba {
+.steps .baba{
   font-size: 15px;
   text-align: center;
   color: white;
 }
 
-.steps div img {
+
+.steps div img{
   margin-top: 30%;
   vertical-align: middle;
 }
 
-.fourthsection {
+.fourthsection{
   background-color: rgb(0, 26, 52);
   padding: 20px 80px 20px 80px;
 }
 
-.fourthsection p {
+.fourthsection p{
   margin-top: 30px;
   font-size: 45px;
   font-weight: bold;
@@ -271,7 +342,7 @@ video {
   margin-bottom: 30px;
 }
 
-.fourthsection span {
+.fourthsection span{
   color: rgb(57, 209, 184);
 }
 
@@ -304,7 +375,7 @@ video {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: rgba(57, 209, 184, 0.5);
+  background-color: rgba(57, 209, 184,0.5);
   transition: opacity 0.3s;
 }
 
@@ -321,22 +392,21 @@ video {
   max-height: 80%;
 }
 
-.fifthsection {
+.fifthsection{
   color: whitesmoke;
 }
 
-.panggrid {
+.panggrid{
   display: grid;
   grid-template-columns: 1fr 1.5fr;
 }
 
-.look {
-  padding-left: 10px;
-  padding-right: 10px;
+.look{
+ padding-left: 10px;
+ padding-right: 10px;
   text-align: justify;
 }
-
-.look p {
+.look p{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,19 +414,19 @@ video {
   font-size: 48px;
   text-transform: uppercase;
   font-weight: bold;
-  flex-wrap: wrap;
+ flex-wrap: wrap;
 }
 
-.look span {
+.look span{
   color: rgb(57, 209, 184);
 }
 
-.stats {
+.stats{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.stats p {
+.stats p{
   display: grid;
   place-items: center;
   width: 200px;
@@ -367,21 +437,21 @@ video {
   border-radius: 30px;
   background-color: rgb(61, 223, 197);
   font-weight: bold;
+
 }
 
-.stats span {
+.stats span{
   font-size: 50px;
   display: flex;
   align-items: end;
 }
 
-.sixthsection {
+.sixthsection{
   background-color: #001a34;
   padding-left: 80px;
   padding-right: 80px;
 }
-
-.we {
+ .we{
   border-bottom: solid 1px;
   padding: 20px;
   font-size: 40px;
@@ -390,22 +460,23 @@ video {
   margin-bottom: 40px;
 }
 
-.googlereview {
+.googlereview{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  
 }
 
-.google {
+.google{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.made-it-happen {
+.made-it-happen{
   width: 100px;
 }
 
-.review {
+.review{
   width: auto;
   height: 150px;
   background-color: rgb(24, 33, 49);
@@ -413,18 +484,18 @@ video {
   padding: 30px;
 }
 
-.message {
+.message{
   font-weight: 300;
   margin-top: 10px;
   color: white;
 }
 
-.commentor {
+.commentor{
   margin-top: 50px;
   color: white;
 }
 
-.seventhsection {
+.seventhsection{
   padding-left: 80px;
   padding-right: 80px;
   background-color: rgb(209, 57, 84);
@@ -432,80 +503,159 @@ video {
   grid-template-columns: 1fr 1fr;
 }
 
-.convo {
+.convo{
+  width: px;
   font-size: 45px;
   color: white;
   font-weight: bold;
 }
 
-.convo span {
+.convo span{
   color: black;
 }
 
 .contact {
   display: grid;
   margin: 0;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 30px; /* Gap between grid items */
 }
 
 .contact input[type="text"],
 .contact input[type="email"],
 .contact input[type="search"] {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1.5px solid #ccc;
+  width: 100%; /* Full width for text, email, and search inputs */
+  border-radius: 5px; /* Add some border-radius for a softer look */
+  border: 1.5px solid #ccc; /* Add border for clarity */
   background-color: transparent;
   color: white;
+  
 }
 
 .contact textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  width: 100%; /* Full width for the textarea */
+  border-radius: 5px; /* Add some border-radius for a softer look */
+  border: 1px solid #ccc; /* Add border for clarity */
 }
 
 .contact button {
-  width: 150px;
-  grid-column: span 1;
-  padding: 10px;
-  border: solid white;
-  border-radius: 5px;
-  background-color: white;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  grid-column: span 1; /* Span two columns */
+  padding: 10px; /* Padding for button */
+  border: solid white; /* Remove border */
+  border-radius: 5px; /* Add some border-radius for a softer look */
+  background-color: white; /* Button background color */
+  color: black; /* Button text color */
+  font-weight: bold; /* Bold font weight */
+  cursor: pointer; /* Add pointer cursor on hover */
   transition: .5s;
 }
 
 .contact button:hover {
-  background-color: transparent;
+  background-color: transparent; /* Darken button background color on hover */
+}
+
+.anything{
+  
+ grid-column: span 2;
+ height: 50px;
+
+}
+
+.condet{
+  color: whitesmoke;
+  font-weight: 500;
+  margin: 15px;
+
+}
+.condet img{
+  display: inline-block;
+}
+
+.condet div{
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  margin: 15px;
 }
 
 .anything {
   align-self: flex-start;
+  /* Align the element to start from the top */
 }
 
 .logos-container img {
   max-height: 80%;
   margin-left: 40px;
-  opacity: 0;
 }
 
-.logos-container img.visible {
-  animation: pop-out 1s ease-out both;
+
+
+/* Apply fade-in effect when first section comes into view */
+.firstsection.in-view {
   opacity: 1;
+  transform: translateY(0);
+  transition: opacity 2s, transform 2s; /* Adjust the duration as needed */
 }
 
-@keyframes pop-out {
+/* Apply animations to other sections similarly */
+.secondsection.in-view,
+.thirdsection.in-view,
+.fourthsection.in-view,
+.fifthsection.in-view,
+.sixthsection.in-view,
+.seventhsection.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 2s, transform 2s; /* Adjust the duration as needed */
+}
+
+
+/* Define the animation for the section */
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: scale(0.8);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
+
+/* Apply the animation to each section */
+.firstsection,
+.thirdsection,
+.fourthsection,
+.fifthsection,
+.sixthsection,
+.seventhsection {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Optionally, you can adjust the delay for each section */
+.firstsection {
+  animation-delay: 0.2s;
+}
+
+.thirdsection {
+  animation-delay: 0.4s;
+}
+
+.fourthsection {
+  animation-delay: 0.6s;
+}
+
+.fifthsection {
+  animation-delay: 0.8s;
+}
+
+.sixthsection {
+  animation-delay: 1s;
+}
+
+.seventhsection {
+  animation-delay: 1.2s;
+}
+
+
